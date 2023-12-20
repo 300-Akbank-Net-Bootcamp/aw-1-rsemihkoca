@@ -1,3 +1,6 @@
+using FluentValidation;
+using VbApi.Models;
+
 namespace VbApi;
 
 public class Startup
@@ -13,6 +16,7 @@ public class Startup
     {
         services.AddControllers();
         
+        services.AddScoped<IValidator<Staff>, StaffValidator>();
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
     }
