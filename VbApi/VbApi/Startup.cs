@@ -17,6 +17,7 @@ public class Startup
         services.AddControllers();
         
         services.AddScoped<IValidator<Staff>, StaffValidator>();
+        services.AddScoped<IValidator<Employee>, EmployeeValidator>();
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
     }
