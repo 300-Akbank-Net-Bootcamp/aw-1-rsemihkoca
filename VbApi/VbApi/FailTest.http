@@ -1,0 +1,27 @@
+###
+
+# curl -X 'POST' 
+#  'http://localhost:5169/api/Employee' 
+#  -H 'accept: */*' 
+#  -H 'Content-Type: application/json' 
+#  -d '{
+#  "name": "stringstri",
+#  "dateOfBirth": "1985-12-21T07:15:30.058Z",
+#  "email": "user@example.com",
+#  "phone": "5522025643",
+#  "hourlySalary": 60
+#}'
+POST http://localhost:5169/api/Employee
+accept: */*
+Content-Type: application/json
+
+{
+  "name": "stringstri",
+  "dateOfBirth": "1985-12-21T07:15:30.058Z",
+  "email": "user@example.com",
+  "phone": "5522025643",
+  "hourlySalary": 60
+}
+
+###
+
